@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Marko</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <div class="contact-form">
+            <div class="form-wrap">
+                <div class="content">
+                    <h2>Saziņas forma</h2>
+                    <p class="t2">
+                        Aizpildiet kontaktu formu, lai sazinātos ar mums un saņemtu cenas piedāvājumu vai produktu paraugu
+                    </p>
+                    <form>
+                        <div class="form-flex">
+                            <div class="item">
+                                <label for="com">Uzņēmums</label>
+                                <input type="text" name="com" id="com">
+                            </div>
+                            <div class="item">
+                                <label for="com1">Uzņēmums</label>
+                                <input type="text" name="com1" id="com1">
+                            </div>
+                            <div class="item">
+                                <label for="com1">E-pasts</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div class="item">
+                                <label for="select">E-pasts</label>
+                                <select name="select" id="select" placeholder="Izvēlieties no esošajiem">
+                                    <option value="0" data-display="Izvēlieties no esošajiem"></option>
+                                    <option value="1">Hello</option>
+                                </select>
+                            </div>
+
+                            <div class="item big">
+                                <label for="textarea">Uzņēmums</label>
+                                <textarea name="msg" id="textarea" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="container">
+                                Apstiprinu privātuma <a href="#">politikas noteikumus</a>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <input type="submit" value="Nosūtīt">
+                    </form>
+                </div>
+                
+                <img class="close-btn" src="./images/close-btn.svg" alt="close-btn">
+                <img class="pattern" src="./images/item-pattern2-borderless.svg" alt="pattern">
+            </div>
+        </div>
+        <div class="mob-menu" style="display: none;">
+            <div class="mob-menu-head">
+                <a href="./index.html"><img src="./images/logo-dark.svg" alt="Logo"></a>
+                <div class="close-btn">
+                    <img src="./images/close-btn.svg" alt="Button">
+                </div>
+            </div>
+            <div class="mob-menu-content">
+                <div class="mob-menu-list">
+                    <div class="list-item">
+                        <div class="btn">Paletes</div>
+                        <div class="dropdown" style="display: none;">
+                            <a href="./standarta-paletes.html">Standarta paletes</a>
+                            <a href="#">Nestandarta paletes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Termiski apstrādātas IPPC paletes</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="btn">Citi produkti</div>
+                        <div class="dropdown" style="display:none;">
+                            <a href="./palesu_topi.html">Palešu topi</a>
+                            <a href="#">Koka kastes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Koka vairogi</a>
+                            <a href="#">Celtnieciba</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="btn">Iepērkam</div>
+                        <div class="dropdown" style="display:none;">
+                            <a href="./apalkoks.html">Apaļkoks</a>
+                            <a href="#">Taras sagataves</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="btn">Par mums</div>
+                        <div class="dropdown" style="display:none;">
+                            <a href="./par-mums_par-mums.html">Par mums</a>
+                            <a href="./par-mums_tehnologijas.html">Tehnoloģijas</a>
+                            <a href="./par-mums_vakances.html">Vakances</a>
+                            <a href="./par-mums_aktualitates.html">Jaunumi</a>
+                            <a href="#">Close</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="#" class="btn">Kontakti</a>
+                    </div>
+                    <div class="list-item">
+                        <a href="#" class="btn contact">Sazināties</a>
+                    </div>
+                    
+                </div>
+
+                <div class="contacts">
+                    <a href="tel:+37167148963">+371 67148963</a>
+                    <a href="mailto:marko@marko.lv">marko@marko.lv</a>
+                    <span>Laiks Latvijā <span class="live-time"></span></span>
+                </div>
+
+                <div class="langs">
+                    <a href="#" class="active">Lv</a>
+                    <a href="#">Ru</a>
+                    <a href="#">En</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="other-header">
+            <div class="header-info">
+                <a href="tel:+37167148963">+371 67148963</a>
+                <a href="mailto:marko@marko.lv">marko@marko.lv</a>
+                <span>Laiks Latvijā <span class="live-time"></span></span>
+            </div>
+            <a class="index-link" href="./index.html">
+                <img src="./images/logo-dark-2.svg" alt="Logo">
+            </a>
+            <div class="header-list">
+                <div class="list-item">
+                    <a href="./paletes.html">Paletes</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown pattern1">
+                            <li><a href="./standarta-paletes.html">Standarta paletes</a></li>
+                            <li><a href="#">Nestandarta paletes</a></li>
+                            <li><a href="#">Sausās paletes</a></li>
+                            <li><a href="#">Termiski apstrādātas IPPC paletes</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern1.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="./citi-produkti.html">Citi produkti</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown">
+                            <li><a href="./palesu_topi.html">Palešu topi</a></li>
+                            <li><a href="#">Koka kastes</a></li>
+                            <li><a href="#">Sausās paletes</a></li>
+                            <li><a href="#">Koka vairogi</a></li>
+                            <li><a href="#">Celtnieciba</a></li>
+                            <li><a href="#">Zāģmateriāli</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern2.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="./ieperkam.html">Iepērkam</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown">
+                            <li><a href="./apalkoks.html">Apaļkoks</a></li>
+                            <li><a href="#">Taras sagataves</a></li>
+                            <li><a href="#">Zāģmateriāli</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern3.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item active">
+                    <a href="./par-mums_par-mums.html">Par mums</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown">
+                            <li><a href="./par-mums_par-mums.html">Par mums</a></li>
+                            <li><a href="./par-mums_tehnologijas.html">Tehnoloģijas</a></li>
+                            <li><a href="./par-mums_vakances.html">Vakances</a></li>                            
+                            <li><a href="./par-mums_aktualitates.html">Jaunumi</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern4.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="./kontakti.html">Kontakti</a>
+                </div>
+                <div class="list-item contact">
+                    <a href="#">Sazināties</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">Lv</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown lang-select">
+                            <li><a href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">DE</a></li>                            
+                            <li><a href="#">NL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <img src="./images/hamburger-dark.svg" alt="hamburger">
+            </div>
+        </header>
+        <div class="section-break">
+            <img src="./images/section-patterns/line2.svg" alt="Line">
+        </div>
+        <main>
+            <section>
+                <div class="content-wrap">
+                    <div class="tab-links">
+                        <a href="./par-mums_par-mums.html" class="item">Par mums</a>
+                        <a href="./par-mums_tehnologijas.html" class="item active">Tehnoloģijas</a>
+                        <a href="./par-mums_par-mums.html" class="item">Vakances</a>
+                        <a href="./par-mums_par-mums.html" class="item">Aktualitātes</a>
+                    </div>
+                    <div class="two-sided big-left">
+                        <div class="left-side">
+                            <div class="subtitle">
+                                MARKO KEA
+                            </div>
+                            <h2>
+                                Koka palešu <br>
+                                un zāģmateriālu <br>
+                                ražošanas uzņēmumums
+                            </h2>
+                            <img src="./images/planks3.jpeg" alt="Bilde" class="image-mobile video">
+                            <p class="t1">
+                                “Binders” Mehanizācijas departamenta remontdarbnīcās Saulkrastos un Raganā ziemā tiek  saremontētas  un tehniskā apkope veikta apmēram simts dažādu transporta un tehnikas vienību. Visu darba apjomu kopumā paveic 15 mehāniķu, remontētāju komanda, tostarp arī auto elektriķi, auto elektronikas u.c. speciālisti. Ziemā remontdarbos iesaistās arī daļa no transporta un būvtehnikas vadītājiem.
+                            </p>
+                            <p class="t2">
+                                “Binders” Mehanizācijas departamenta remontdarbnīcās Saulkrastos un Raganā ziemā tiek  saremontētas  un tehniskā apkope veikta apmēram simts dažādu transporta un tehnikas vienību. Visu darba apjomu kopumā paveic 15 mehāniķu, remontētāju komanda, tostarp arī auto elektriķi, auto elektronikas u.c. speciālisti. Ziemā remontdarbos iesaistās arī daļa no transporta un būvtehnikas vadītājiem.
+                            </p>
+                        </div>
+                        <div class="right-side small mobile">
+                            <img src="./images/planks3.jpeg" alt="Bilde" class="video">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-break">
+                <img src="./images/section-patterns/line4.svg" alt="Line">
+            </div>
+
+            <section>
+                <div class="content-wrap">
+                    <div class="two-sided video">
+                        <div class="left-side">
+                            <div class="video-wrap">
+                                <video loop>
+                                    <source src="./video/Pexels Videos 1448735.mp4" type="video/mp4">
+                                </video>
+                                <img src="./images/play-btn.svg" alt="Play" class="play-btn">
+                            </div>
+                        </div>
+                        <div class="right-side">
+                            <div class="subtitle">
+                                MARKO KEA
+                            </div>
+                            <h2>Mūsu rūpnīcas</h2>
+                            <div class="video-wrap mobile">
+                                <video loop>
+                                    <source src="./video/Pexels Videos 1448735.mp4" type="video/mp4">
+                                </video>
+                                <img src="./images/play-btn.svg" alt="Play" class="play-btn">
+                            </div>
+                            <p class="t2 small">
+                                Meitas uzņēmums lietuviešu kompānija Marko Pallets uztur mūsu pozīcijas starptautiskajā tirgū un mūsu rūpnīcai Latvijā nodrošina regulāru zāģmateriālu piegādi.
+                            </p>
+                            <p class="t2 small">
+                                2 700 m2 slēgtas noliktavas nodrošina vismaz 100 000 sausu palešu uzglabāšanu, bet 15 000 m2 liela kopējā platība dod mums iespēju vienlaicīgi uzglabāt 500 000 palešu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="section-break">
+                <img src="./images/section-patterns/line1.svg" alt="Line">
+            </div>
+
+
+            <section>
+                <div class="content-wrap centered">
+                    <p class="t1 big">
+                        “Binders” Mehanizācijas departamenta remontdarbnīcās Saulkrastos un Raganā ziemā tiek  saremontētas  un tehniskā apkope veikta apmēram simts dažādu transporta un tehnikas vienību. Visu darba apjomu kopumā paveic 15 mehāniķu, remontētāju komanda, tostarp arī auto elektriķi, auto elektronikas u.c. speciālisti. Ziemā remontdarbos iesaistās arī daļa no transporta un būvtehnikas vadītājiem.
+                    </p>
+                </div>
+            </section>
+
+            <div class="section-break">
+                <img src="./images/section-patterns/line3.svg" alt="Line">
+            </div>
+
+
+            <section class="footer-after actual">
+                <div class="content-wrap">
+                    <div class="two-sided big-left">
+                        <div class="left-side">
+                            <div class="subtitle">
+                                MARKO KEA
+                            </div>
+                            <h2>
+                                Žāvēšanas kamera
+                            </h2>
+                            <p class="t2">
+                                SIA Marko KEA strādā  atbilstoši starptautiskajam vides pārvaldības standartam ISO 14001:2015. Kompānija apzinās ceļu būves, rekonstrukcijas, asfaltbetona ražošanas iespējamos kaitējumus videi un strikti ievēro visas starptautiskā standarta vadlīnijas. Vides prasību ievērošana un resursu efektīva izmantošana tiek pastāvīgi uzraudzīta un ekonomisko iespēju robežās uzlabota.
+                            </p>
+                            <p class="t2">
+                                Uzņēmuma darbinieki, sadarbības partneri, apakšuzņēmēji, klienti, sabiedrība visplašākajā izpratnē ir tās kategorijas, kuras tieši vai pastarpināti ietekmē kompānijas darbība.
+                                SIA Marko KEA realizē palīdzības politiku, atbilstoši noteiktajām atbalsta prioritātēm: sociālie projekti, kultūra, sports.
+                            </p>
+                            <p class="t2">  
+                                SIA Marko KEA atzīst un pilda visas saistības un pienākumus pret darba ņēmējiem – uzņēmuma darbiniekiem. Viena no kompānijas prioritātēm ir strādājošo drošība un veselība, tāpēc darba aizsardzības pasākumu realizēšana un dažādi motivējoši darba vides pasākumi ir kompānijas prioritāte.                            </p>
+                            </p>
+                        </div>
+                        <div class="right-side small slider">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="./images/planks1.jpeg" alt="Bilde"></div>
+                                    <div class="swiper-slide"><img src="./images/planks2.jpeg" alt="Bilde"></div>
+                                    <div class="swiper-slide"><img src="./images/planks3.jpeg" alt="Bilde"></div>
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                            
+                                <div class="swiper-button-prev"><img src="./images/arrow-left-yellow.svg" alt="arrow"></div>
+                                <div class="swiper-button-next"><img src="./images/arrow-right-yellow.svg" alt="arrow"></div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+           <div class="footer-pattern">
+                <img src="./images/bg-top-pattern.png" alt="img">
+                <img src="./images/bg-top-line.svg" alt="img" class="line">
+                
+           </div>
+           <div class="line-wrap">
+                <img src="./images/section-patterns/line3-red.svg" alt="img" class="line-bottom">
+           </div>
+           <div class="two-sided-footer">
+                <div class="left-side">
+                    <img src="./images/footer-logo.svg" alt="Logo">
+                    <h3>
+                        SIA Marko KEA
+                    </h3>
+                    <p class="t2">
+                        Reģ Nr: LV40003361531
+                        Stopiņu novads, Līči, LV2118
+                    </p>
+                    <div class="contacts">
+                        <span class="t2">Tālrunis: <a href="tel:+37167148963">+371 67148963</a></span>
+                        <span class="t2">Tālrunis: <a href="tel:+37167148963">+371 67148963</a></span>
+                        <span class="t2">E-pasts: <a href="mailto:marko@marko.lv">marko@marko.lv</a></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="./images/facebook-icon1.png" alt="fb-icon"></a>
+                        <a href="#"><img src="./images/ig-icon.png" alt="ig-icon"></a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="sponsors">
+
+                    </div>
+                    <div class="lists">
+                        <div class="list">
+                            <a href="./paletes.html"><h4>Paletes</h4></a>
+                            <a href="./standarta-paletes.html">Standarta paletes</a>
+                            <a href="#">Nestandarta paletes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Termiski apstrādātas IPPC paletes</a>
+                            <a href="#">Speciālais marķējums ar kompānijas logotipu</a>
+                        </div>
+                        <div class="list">
+                            <a href="./citi-produkti.html"><h4>Citi produkti</h4></a>
+                            <a href="./palesu_topi.html">Palešu topi</a>
+                            <a href="#">Koka kastes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Koka vairogi</a>
+                            <a href="#">Celtnieciba</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                        <div class="list">
+                            <a href="./ieperkam.html"><h4>Iepērkam</h4></a>
+                            <a href="./apalkoks.html">Apaļkoks</a>
+                            <a href="#">Taras sagataves</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                        <div class="list">
+                            <a href="./par-mums_par-mums.html"><h4>Par mums</h4></a>
+                            <a href="./par-mums_tehnologijas.html">Tehnoloģijas</a>
+                            <a href="./par-mums_vakances.html">Vakances</a>
+                            <a href="./par-mums_aktualitates.html">Jaunumi</a>
+                            <a href="./kontakti.html">Kontakti</a>
+                            <a href="./p-politika.html">Privātuma politika</a>
+                            <a href="#">Sīkdatņu politika</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="copyright">2022 © SIA Marko KEA</div>
+        </footer>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.mob-menu-list .list-item').each(function() {
+                $(this).children('.btn').click(function() {
+                    if($(this).hasClass('active')) {
+                        $(this).removeClass('active')
+                        $(this).siblings('.dropdown').hide('slide', {direction: 'up'}, 400)
+                    } else {
+                        $(this).addClass('active')
+                        $(this).siblings('.dropdown').show('slide', {direction: 'up'}, 400)
+                    }
+                })
+            })
+
+            $(document).ready(function() {
+                $('select').niceSelect();
+            });
+
+            const popUpBtn = document.querySelector('.header-list .list-item.contact')
+            const popUpBtnMob = document.querySelector('.mob-menu .btn.contact')
+            const popUpClose = document.querySelector('.contact-form .close-btn')
+            const popUp = document.querySelector('.contact-form');
+            popUpBtn.onclick = function() {
+                popUp.style.display = 'block';
+            }
+
+            popUpBtnMob.onclick = function() {
+                popUp.style.display = 'block';
+            }
+
+            window.onclick = function(event) {
+                if (event.target == popUp) {
+                    popUp.style.display = "none";
+                }
+            }
+
+            popUpClose.onclick = function() {
+                popUp.style.display = "none";
+            }
+
+            $(document).ready(function() {
+                $('.mob-menu').hide();
+                $('.hamburger').click(function() {
+                    $('.mob-menu').show('slide', {direction: 'right'}, 400)
+                })
+                $('.close-btn').click(function() {
+                    $('.mob-menu').hide('slide', {direction: 'right'}, 400)
+                })
+            })
+        </script>
+        <script>
+            $(document).ready(function() {
+                const liveTime = document.querySelectorAll('.live-time');
+
+                function calcTime(offset) {
+                    var d = new Date();
+                    var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+                    var nd = new Date(utc + (3600000*offset));
+
+                    var m = nd.getMinutes();
+                    var h = nd.getHours();
+                    return ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
+                }
+
+                liveTime.forEach(item => {
+                    item.innerHTML = calcTime('+3')
+                })
+
+                setInterval(function() {
+                    liveTime.forEach(item => {
+                        item.innerHTML = calcTime('+3')
+                    })
+                },1000)
+            })
+            
+        </script>
+        <script>
+            $(document).ready(function() {
+                const videoBlock = document.querySelectorAll('.video-wrap');
+                videoBlock.forEach(item => {
+                    const video = item.querySelector('video');
+                    const playBtn = item.querySelector('img'); 
+                    item.addEventListener('click', function() {
+                        if (video.paused === true) {
+                            video.play();
+                            playBtn.style.display = 'none';
+                        } else {
+                            video.pause();
+                            playBtn.style.display = 'block';
+                        }
+                    })
+                })      
+            })
+            
+        </script>  
+        <script>
+            const imgSlider = new Swiper('.slider .swiper', {
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Marko</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+        <div class="contact-form">
+            <div class="form-wrap">
+                <div class="content">
+                    <h2>Saziņas forma</h2>
+                    <p class="t2">
+                        Aizpildiet kontaktu formu, lai sazinātos ar mums un saņemtu cenas piedāvājumu vai produktu paraugu
+                    </p>
+                    <form>
+                        <div class="form-flex">
+                            <div class="item">
+                                <label for="com">Uzņēmums</label>
+                                <input type="text" name="com" id="com">
+                            </div>
+                            <div class="item">
+                                <label for="com1">Uzņēmums</label>
+                                <input type="text" name="com1" id="com1">
+                            </div>
+                            <div class="item">
+                                <label for="com1">E-pasts</label>
+                                <input type="text" name="email" id="email">
+                            </div>
+                            <div class="item">
+                                <label for="select">E-pasts</label>
+                                <select name="select" id="select" placeholder="Izvēlieties no esošajiem">
+                                    <option value="0" data-display="Izvēlieties no esošajiem"></option>
+                                    <option value="1">Hello</option>
+                                </select>
+                            </div>
+
+                            <div class="item big">
+                                <label for="textarea">Uzņēmums</label>
+                                <textarea name="msg" id="textarea" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label class="container">
+                                Apstiprinu privātuma <a href="#">politikas noteikumus</a>
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <input type="submit" value="Nosūtīt">
+                    </form>
+                </div>
+                
+                <img class="close-btn" src="./images/close-btn.svg" alt="close-btn">
+                <img class="pattern" src="./images/item-pattern2-borderless.svg" alt="pattern">
+            </div>
+        </div>
+        <div class="mob-menu" style="display: none;">
+            <div class="mob-menu-head">
+                <a href="./index.html"><img src="./images/logo-dark.svg" alt="Logo"></a>
+                <div class="close-btn">
+                    <img src="./images/close-btn.svg" alt="Button">
+                </div>
+            </div>
+            <div class="mob-menu-content">
+                <div class="mob-menu-list">
+                    <div class="list-item">
+                        <div class="btn">Paletes</div>
+                        <div class="dropdown" style="display: none;">
+                            <a href="./standarta-paletes.html">Standarta paletes</a>
+                            <a href="#">Nestandarta paletes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Termiski apstrādātas IPPC paletes</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="btn">Citi produkti</div>
+                        <div class="dropdown" style="display:none;">
+                            <a href="./palesu_topi.html">Palešu topi</a>
+                            <a href="#">Koka kastes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Koka vairogi</a>
+                            <a href="#">Celtnieciba</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="btn">Iepērkam</div>
+                        <div class="dropdown" style="display:none;">
+                            <a href="./apalkoks.html">Apaļkoks</a>
+                            <a href="#">Taras sagataves</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="btn">Par mums</div>
+                        <div class="dropdown" style="display:none;">
+                            <a href="./par-mums_par-mums.html">Par mums</a>
+                            <a href="./par-mums_tehnologijas.html">Tehnoloģijas</a>
+                            <a href="./par-mums_vakances.html">Vakances</a>
+                            <a href="./par-mums_aktualitates.html">Jaunumi</a>
+                            <a href="#">Close</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <a href="#" class="btn">Kontakti</a>
+                    </div>
+                    <div class="list-item">
+                        <a href="#" class="btn contact">Sazināties</a>
+                    </div>
+                    
+                </div>
+
+                <div class="contacts">
+                    <a href="tel:+37167148963">+371 67148963</a>
+                    <a href="mailto:marko@marko.lv">marko@marko.lv</a>
+                    <span>Laiks Latvijā <span class="live-time"></span></span>
+                </div>
+
+                <div class="langs">
+                    <a href="#" class="active">Lv</a>
+                    <a href="#">Ru</a>
+                    <a href="#">En</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="other-header">
+            <div class="header-info">
+                <a href="tel:+37167148963">+371 67148963</a>
+                <a href="mailto:marko@marko.lv">marko@marko.lv</a>
+                <span>Laiks Latvijā <span class="live-time"></span></span>
+            </div>
+            <a class="index-link" href="./index.html">
+                <img src="./images/logo-dark-2.svg" alt="Logo">
+            </a>
+            <div class="header-list">
+                <div class="list-item">
+                    <a href="./paletes.html">Paletes</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown pattern1">
+                            <li><a href="./standarta-paletes.html">Standarta paletes</a></li>
+                            <li><a href="#">Nestandarta paletes</a></li>
+                            <li><a href="#">Sausās paletes</a></li>
+                            <li><a href="#">Termiski apstrādātas IPPC paletes</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern1.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="./citi-produkti.html">Citi produkti</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown">
+                            <li><a href="./palesu_topi.html">Palešu topi</a></li>
+                            <li><a href="#">Koka kastes</a></li>
+                            <li><a href="#">Sausās paletes</a></li>
+                            <li><a href="#">Koka vairogi</a></li>
+                            <li><a href="#">Celtnieciba</a></li>
+                            <li><a href="#">Zāģmateriāli</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern2.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="./ieperkam.html">Iepērkam</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown">
+                            <li><a href="./apalkoks.html">Apaļkoks</a></li>
+                            <li><a href="#">Taras sagataves</a></li>
+                            <li><a href="#">Zāģmateriāli</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern3.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="./par-mums_par-mums.html">Par mums</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown">
+                            <li><a href="./par-mums_par-mums.html">Par mums</a></li>
+                            <li><a href="./par-mums_tehnologijas.html">Tehnoloģijas</a></li>
+                            <li><a href="./par-mums_vakances.html">Vakances</a></li>                            
+                            <li><a href="./par-mums_aktualitates.html">Jaunumi</a></li>
+                        </ul>
+                        <img src="./images/dropdown-pattern4.svg" alt="">
+                    </div>
+                </div>
+                <div class="list-item">
+                    <a href="./kontakti.html">Kontakti</a>
+                </div>
+                <div class="list-item contact">
+                    <a href="#">Sazināties</a>
+                </div>
+                <div class="list-item">
+                    <a href="#">Lv</a>
+                    <div class="dropdown-wrap">
+                        <ul class="dropdown lang-select">
+                            <li><a href="#">RU</a></li>
+                            <li><a href="#">EN</a></li>
+                            <li><a href="#">DE</a></li>                            
+                            <li><a href="#">NL</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="hamburger">
+                <img src="./images/hamburger-dark.svg" alt="hamburger">
+            </div>
+        </header>
+        <div class="section-break">
+            <img src="./images/section-patterns/line1.svg" alt="Line">
+        </div>
+        <main>
+            <section class="footer-after">
+                <div class="content-wrap">
+                    <div class="vakances-slider">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="subtitle">
+                                        MARKO KEA VAKANCES
+                                    </div>
+                                    <h2>Projektu vadītājs</h2>
+                                    <p class="t1">
+                                        Aicinām pievienoties mūsu komanda projekta vadītāju. Ja Tev piemīt radoša, kreatīva un telpas vizualizēšanas tehniskā domāšana, augsta atbildības sajūta, attīstīta komunikācija un proti svešvalodas, kā arī spēja ātri pielāgoties situācijām – mums ir darbs Tev!
+                                    </p>
+                                    <span class="vakances-list-title t2">
+                                        Tavi pienākumu būs:
+                                    </span> 
+                                    <p class="t2">
+                                        Veikt nepieciešamos aprēķinus <br>
+                                        Sastādīt tāmes dokumentāciju atbilstoši normatīviem un darba uzdevumiem <br>
+                                        Veikt tirgus izpēti un analīzi <br>
+                                        Visu pasūtījumu izmaksas noteikšana <br>
+                                        Proti lasīt skices un rasējumus <br>
+                                    </p>                
+                                    <span class="vakances-list-title t2">Motiva Latvija nodrošinās:</span> 
+                                    <p class="t2">
+                                        Konkurētspējīgu atalgojumu <br>
+                                        Izaugsmes iespējas <br>
+                                        Ikgadējais atmaksātais atvaļinājums un sociālas garantijas <br>
+                                        Draudzīgu kolektīvu <br>
+                                        Apmācības starptautiskā līmeni pie produkta ražotājiem <br>
+                                        Iepriekšēju pieredzi uzskatīsim par priekšrocību <br>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="subtitle">
+                                        MARKO KEA VAKANCES
+                                    </div>
+                                    <h2>Projektu vadītājs</h2>
+                                    <p class="t1">
+                                        Aicinām pievienoties mūsu komanda projekta vadītāju. Ja Tev piemīt radoša, kreatīva un telpas vizualizēšanas tehniskā domāšana, augsta atbildības sajūta, attīstīta komunikācija un proti svešvalodas, kā arī spēja ātri pielāgoties situācijām – mums ir darbs Tev!
+                                    </p>
+                                    <span class="vakances-list-title t2">
+                                        Tavi pienākumu būs:
+                                    </span> 
+                                    <p class="t2">
+                                        Veikt nepieciešamos aprēķinus <br>
+                                        Sastādīt tāmes dokumentāciju atbilstoši normatīviem un darba uzdevumiem <br>
+                                        Veikt tirgus izpēti un analīzi <br>
+                                        Visu pasūtījumu izmaksas noteikšana <br>
+                                        Proti lasīt skices un rasējumus <br>
+                                    </p>                
+                                    <span class="vakances-list-title t2">Motiva Latvija nodrošinās:</span> 
+                                    <p class="t2">
+                                        Konkurētspējīgu atalgojumu <br>
+                                        Izaugsmes iespējas <br>
+                                        Ikgadējais atmaksātais atvaļinājums un sociālas garantijas <br>
+                                        Draudzīgu kolektīvu <br>
+                                        Apmācības starptautiskā līmeni pie produkta ražotājiem <br>
+                                        Iepriekšēju pieredzi uzskatīsim par priekšrocību <br>
+                                    </p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="subtitle">
+                                        MARKO KEA VAKANCES
+                                    </div>
+                                    <h2>Projektu vadītājs</h2>
+                                    <p class="t1">
+                                        Aicinām pievienoties mūsu komanda projekta vadītāju. Ja Tev piemīt radoša, kreatīva un telpas vizualizēšanas tehniskā domāšana, augsta atbildības sajūta, attīstīta komunikācija un proti svešvalodas, kā arī spēja ātri pielāgoties situācijām – mums ir darbs Tev!
+                                    </p>
+                                    <span class="vakances-list-title t2">
+                                        Tavi pienākumu būs:
+                                    </span> 
+                                    <p class="t2">
+                                        Veikt nepieciešamos aprēķinus <br>
+                                        Sastādīt tāmes dokumentāciju atbilstoši normatīviem un darba uzdevumiem <br>
+                                        Veikt tirgus izpēti un analīzi <br>
+                                        Visu pasūtījumu izmaksas noteikšana <br>
+                                        Proti lasīt skices un rasējumus <br>
+                                    </p>                
+                                    <span class="vakances-list-title t2">Motiva Latvija nodrošinās:</span> 
+                                    <p class="t2">
+                                        Konkurētspējīgu atalgojumu <br>
+                                        Izaugsmes iespējas <br>
+                                        Ikgadējais atmaksātais atvaļinājums un sociālas garantijas <br>
+                                        Draudzīgu kolektīvu <br>
+                                        Apmācības starptautiskā līmeni pie produkta ražotājiem <br>
+                                        Iepriekšēju pieredzi uzskatīsim par priekšrocību <br>
+                                    </p>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <a href="./par-mums_vakances.html" class="link-back">Atpakaļ uz sarakstu</a>
+                    </div>
+                    <div class="arrow-wrap">
+                        <div class="button-prev"><img src="./images/arrow-left-red.svg" alt="arrow"></div>
+                        <div class="button-next"><img src="./images/arrow-right-red.svg" alt="arrow"></div>
+                    </div>  
+                </div>
+            </section>
+
+        </main>
+        <footer>
+           <div class="footer-pattern">
+                <img src="./images/bg-top-pattern.png" alt="img">
+                <img src="./images/bg-top-line.svg" alt="img" class="line">
+                
+           </div>
+           <div class="line-wrap">
+                <img src="./images/section-patterns/line3-red.svg" alt="img" class="line-bottom">
+           </div>
+           <div class="two-sided-footer">
+                <div class="left-side">
+                    <img src="./images/footer-logo.svg" alt="Logo">
+                    <h3>
+                        SIA Marko KEA
+                    </h3>
+                    <p class="t2">
+                        Reģ Nr: LV40003361531
+                        Stopiņu novads, Līči, LV2118
+                    </p>
+                    <div class="contacts">
+                        <span class="t2">Tālrunis: <a href="tel:+37167148963">+371 67148963</a></span>
+                        <span class="t2">Tālrunis: <a href="tel:+37167148963">+371 67148963</a></span>
+                        <span class="t2">E-pasts: <a href="mailto:marko@marko.lv">marko@marko.lv</a></span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><img src="./images/facebook-icon1.png" alt="fb-icon"></a>
+                        <a href="#"><img src="./images/ig-icon.png" alt="ig-icon"></a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="sponsors">
+
+                    </div>
+                    <div class="lists">
+                        <div class="list">
+                            <a href="./paletes.html"><h4>Paletes</h4></a>
+                            <a href="./standarta-paletes.html">Standarta paletes</a>
+                            <a href="#">Nestandarta paletes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Termiski apstrādātas IPPC paletes</a>
+                            <a href="#">Speciālais marķējums ar kompānijas logotipu</a>
+                        </div>
+                        <div class="list">
+                            <a href="./citi-produkti.html"><h4>Citi produkti</h4></a>
+                            <a href="./palesu_topi.html">Palešu topi</a>
+                            <a href="#">Koka kastes</a>
+                            <a href="#">Sausās paletes</a>
+                            <a href="#">Koka vairogi</a>
+                            <a href="#">Celtnieciba</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                        <div class="list">
+                            <a href="./ieperkam.html"><h4>Iepērkam</h4></a>
+                            <a href="./apalkoks.html">Apaļkoks</a>
+                            <a href="#">Taras sagataves</a>
+                            <a href="#">Zāģmateriāli</a>
+                        </div>
+                        <div class="list">
+                            <a href="./par-mums_par-mums.html"><h4>Par mums</h4></a>
+                            <a href="./par-mums_tehnologijas.html">Tehnoloģijas</a>
+                            <a href="./par-mums_vakances.html">Vakances</a>
+                            <a href="./par-mums_aktualitates.html">Jaunumi</a>
+                            <a href="./kontakti.html">Kontakti</a>
+                            <a href="./p-politika.html">Privātuma politika</a>
+                            <a href="#">Sīkdatņu politika</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <div class="copyright">2022 © SIA Marko KEA</div>
+        </footer>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js" integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha512-NqYds8su6jivy1/WLoW8x1tZMRD7/1ZfhWG/jcRQLOzV1k1rIODCpMgoBnar5QXshKJGV7vi0LXLNXPoFsM5Zg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.mob-menu-list .list-item').each(function() {
+                $(this).children('.btn').click(function() {
+                    if($(this).hasClass('active')) {
+                        $(this).removeClass('active')
+                        $(this).siblings('.dropdown').hide('slide', {direction: 'up'}, 400)
+                    } else {
+                        $(this).addClass('active')
+                        $(this).siblings('.dropdown').show('slide', {direction: 'up'}, 400)
+                    }
+                })
+            })
+
+            $(document).ready(function() {
+                $('select').niceSelect();
+            });
+
+            const popUpBtn = document.querySelector('.header-list .list-item.contact')
+            const popUpBtnMob = document.querySelector('.mob-menu .btn.contact')
+            const popUpClose = document.querySelector('.contact-form .close-btn')
+            const popUp = document.querySelector('.contact-form');
+            popUpBtn.onclick = function() {
+                popUp.style.display = 'block';
+            }
+
+            popUpBtnMob.onclick = function() {
+                popUp.style.display = 'block';
+            }
+
+            window.onclick = function(event) {
+                if (event.target == popUp) {
+                    popUp.style.display = "none";
+                }
+            }
+
+            popUpClose.onclick = function() {
+                popUp.style.display = "none";
+            }
+
+            $(document).ready(function() {
+                $('.mob-menu').hide();
+                $('.hamburger').click(function() {
+                    $('.mob-menu').show('slide', {direction: 'right'}, 400)
+                })
+                $('.close-btn').click(function() {
+                    $('.mob-menu').hide('slide', {direction: 'right'}, 400)
+                })
+            })
+        </script>
+        <script>
+            $(document).ready(function() {
+                const liveTime = document.querySelectorAll('.live-time');
+
+                function calcTime(offset) {
+                    var d = new Date();
+                    var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+                    var nd = new Date(utc + (3600000*offset));
+
+                    var m = nd.getMinutes();
+                    var h = nd.getHours();
+                    return ("0" + h).substr(-2) + ":" + ("0" + m).substr(-2);
+                }
+
+                liveTime.forEach(item => {
+                    item.innerHTML = calcTime('+3')
+                })
+
+                setInterval(function() {
+                    liveTime.forEach(item => {
+                        item.innerHTML = calcTime('+3')
+                    })
+                },1000)
+            })
+            
+        </script>
+        <script>
+            $(document).ready(function() {
+                const videoBlock = document.querySelectorAll('.video-wrap');
+                videoBlock.forEach(item => {
+                    const video = item.querySelector('video');
+                    const playBtn = item.querySelector('img'); 
+                    item.addEventListener('click', function() {
+                        if (video.paused === true) {
+                            video.play();
+                            playBtn.style.display = 'none';
+                        } else {
+                            video.pause();
+                            playBtn.style.display = 'block';
+                        }
+                    })
+                })      
+            })
+            
+        </script>  
+        <script>
+            const vakanceSlider = new Swiper('.vakances-slider .swiper', {
+                //Šis atbild par sākuma slīdu
+                initialSlide: 0,
+
+                navigation: {
+                    nextEl: '.button-next',
+                    prevEl: '.button-prev',
+                },
+
+            });
+        </script>
+    </body>
+</html>
