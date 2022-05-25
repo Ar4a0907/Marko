@@ -873,6 +873,13 @@ section.gray {
 
 .section-break {
     margin-top: 30px;
+
+    &.mobile {
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        margin-bottom: 50px;
+        display: none;
+    }
 }
 
 .video-wrap {
@@ -2010,6 +2017,9 @@ h2.big-margin {
 }
 
 @media only screen and (max-width: 1024px)  {
+    .section-break.mobile {
+        display: block;
+    }
     .two-sided-footer .left-side, .two-sided-footer .right-side .lists {
         margin-bottom: 80px;
     }
