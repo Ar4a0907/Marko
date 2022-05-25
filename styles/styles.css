@@ -88,7 +88,7 @@ h4 {
 
 .t1, .t2, .t3 {
   font-family: 'Nunito Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 130%;
 }
 
@@ -176,8 +176,8 @@ header .header-list {
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  -webkit-column-gap: 5px;
-          column-gap: 5px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
 }
 
 header .header-list .list-item {
@@ -185,6 +185,7 @@ header .header-list .list-item {
   color: #FFF;
   padding-bottom: 10px;
   margin-bottom: -10px;
+  font-size: 18px;
 }
 
 header .header-list .list-item.active a {
@@ -236,6 +237,7 @@ header .header-list .list-item .dropdown-wrap .dropdown {
 }
 
 header .header-list .list-item .dropdown-wrap .dropdown a {
+  font-size: 16px;
   color: #231F20;
 }
 
@@ -262,8 +264,9 @@ header .header-info {
   -webkit-column-gap: 20px;
           column-gap: 20px;
   top: 10px;
-  right: 20px;
+  right: 28px;
   font-size: 18px;
+  font-weight: 300;
 }
 
 header .header-info a {
